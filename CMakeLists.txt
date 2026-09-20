@@ -196,6 +196,8 @@ if(UNIX)
     install(FILES data/io.github.mpc_qt.mpc-qt_enqueue.desktop DESTINATION share/applications)
     install(FILES data/io.github.mpc_qt.mpc-qt.metainfo.xml DESTINATION share/metainfo)
     install(FILES res/images/icon/mpc-qt.svg DESTINATION share/icons/hicolor/scalable/apps)
+    install(FILES res/images/icon/mpc-qt.svg DESTINATION share/icons/hicolor/scalable/apps
+            RENAME io.github.mpc_qt.mpc-qt.svg)
 
     add_custom_target(uninstall COMMAND xargs rm -vf < install_manifest.txt)
 endif()
