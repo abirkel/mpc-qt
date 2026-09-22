@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     Logger::setConsoleLogging(foundLoggingOpt);
     Logger::singleton();
     Logger::log(logModule, "starting logging");
-    const QIcon bundledIcon(":/images/icon/mpc-qt.svg");
+    const QIcon bundledIcon(":/images/icon/io.github.mpc_qt.mpc-qt.svg");
 #if defined(Q_OS_UNIX) && !defined(Q_OS_MAC)
     QApplication::setWindowIcon(QIcon::fromTheme(QLatin1String(desktopFile), bundledIcon));
 #else
